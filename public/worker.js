@@ -4,7 +4,6 @@ var urlsToCache = [
   '/index.html',
   '/manifest.json','/logo192.png','/logo512.png','/favicon.ico','./worker.js',
   'https://covid19.mathdro.id/api/countries','https://api.covid19api.com/summary',
-  './App.js','./Card.js','./Footer.js'
 ];
 var self=this;
 // Install a service worker
