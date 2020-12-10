@@ -11,7 +11,7 @@ function Caard() {
       const object = await (datta.json());
 
       if (stat === "Global") {
-  
+         
         const car = {
           nam: "Global",
           conf: object.Global.TotalConfirmed,
@@ -53,8 +53,8 @@ function Caard() {
 
     hy();
   })
-
-  if (!Api) { return "Loading...." }
+  	
+  if (Api===undefined) { return "Loading...." }
   return (
     <>
       <h2 className="card m-3  shadow  text-center p-3" style={{  display: "inline-block" }}>{Api.nam} Live <b>Update🔊</b></h2>
