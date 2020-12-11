@@ -6,30 +6,32 @@ export const Choosefile = () => {
   const { fetc } = useContext(contx);
 
   const [sta, setsta] = useState([]);
+  const [hyt, sethyt] = useState("Global");
+
   useEffect(() => {
     async function data() {
-      const data = await fetch("https://covid19.mathdro.id/api/countries");
-      const { countries } = await (data.json());
-      setsta(countries);
-
+      const data = await fetch("https://api.covid19api.com/summary");
+     //  const { countries } = await (data.json()); change api
+      const { Countries } = await (data.json());
+        console.log(Countries);
+      //  setsta(countries); for change api
+          setsta(Countries);
+      
     }
     data();
   }, [])
 
-  const [hyt, sethyt] = useState("Global");
-
   fetc(hyt);
   return (
     <div style={{ justifyContent: "center", display: "flex" }}>
-
-      <select className=" bg-lightgrey p-2 w-75  " onChange={(e) => sethyt(e.target.value)}>
+       
+        
+      <select className=" bg-grey p-2 w-75 " placeholder="Select Country" onChange={(e) => sethyt(e.target.value)}>
         <option disabled>--Select Country--</option>
         <option hidden>--Select Country--</option>
         <option >Global</option>
-        {sta.map((dat, ind) => { return <option key={ind}>{dat.name}</option> })}
-        
-       
-        
+        {sta.map((dat, ind) => { return <option key={ind}>{dat.Country}</option> })}
+
       </select>
 
 

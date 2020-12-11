@@ -11,9 +11,9 @@ function App() {
     <Maatch>
       <>
         <div className="w-2 pt-4 d-sm-flex  text-center " >
-          <img style={{ width: "150px", justifyContent: "center", height: "120px" }} 
-          src="https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlydXN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Corna png" />
+          <img style={{ width: "250px", justifyContent: "center",borderRadius:"50px", height: "150px" }} 
+          src="https://media4.giphy.com/media/Q66Otqclp5Xmzg2B8X/giphy.gif"
+          alt="Corna Gif " />
           <p className="pt-4   " style={{ fontSize: "30px" }}
           ><b>COVID-19 APP</b></p></div>
         <br />

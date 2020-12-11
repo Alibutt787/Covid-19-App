@@ -28,7 +28,6 @@ function Caard() {
 
 
       else {
-
         object.Countries.map((data, ind) => {
           if (data.Country === stat) {
             const car = {
@@ -43,6 +42,7 @@ function Caard() {
 
             }
             setApi(car);
+            console.log(Api);
           }
 
         })
