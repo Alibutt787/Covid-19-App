@@ -1,9 +1,7 @@
 var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
   '/',
-  '/index.html',
-  //'/manifest.json','/logo192.png','/logo512.png','/favicon.ico','./worker.js',
-  'https://covid19.mathdro.id/api/countries','https://api.covid19api.com/summary',
+  '/index.html','https://api.covid19api.com/summary',
 ];
 var self=this;
 // Install a service worker

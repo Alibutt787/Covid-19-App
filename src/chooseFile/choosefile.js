@@ -6,7 +6,7 @@ export const Choosefile = () => {
   const { fetc } = useContext(contx);
 
   const [sta, setsta] = useState([]);
-  const [hyt, sethyt] = useState("Global");
+  const [hyt, sethyt] = useState("Pakistan");
 
   useEffect(() => {
     async function data() {
